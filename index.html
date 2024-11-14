@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="grind"> 
+    <h1>Formulário </h1>
+    <button id="abrir" onclick="abrirFechar()" >Lognin/cadastro</button>
+    <dialog id="modal">
+        <div class="modal-header">
+            <form action="index2.html">
+
+            <label for="">Nome</label>
+            <input type="text" placeholder="Nome" oninput="localNome()" id="Nome" >
+            <br><br>
+            <label for="">Email</label>
+            <input type="text" placeholder="Email" id="Email" oninput="localEmail()">
+            <br><br>
+            <label>Telefone</label>
+            <input type="tel" placeholder="(00)00000-0000" id="telefone"  oninput=mascara_telefone() maxlength="14">
+            <br><br>
+            <label for="">CPF</label>
+            <input type="text" id="cpf" oninput=mascara_cpf() placeholder="xxx.xxx.xxx-xx" maxlength="14">
+            <br><br>
+            <label for="">Senha</label>
+            <input type="text" placeholder="Senha" id="senha" oninput="localSenha()">
+
+            <br><br><br>
+            <input type="submit" name="" id="" onclick="alerta()">
+            </form>
+        </div>  
+    </dialog>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>

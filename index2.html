@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="grind">
+    <h1>Usuário </h1>
+    <button id="abrir" onclick="abrirFechar()" >Perfil</button>
+    <dialog id="modal">
+        <div class="modal-header">
+            <form action="index.html">
+
+            <label for="">Nome</label>
+            <input type="text" placeholder="Nome" oninput="localNome()" id="recebenome" disabled>
+            <br><br>                
+            <label for="">Email</label>
+            <input type="text" placeholder="Email" id="recebeemail" disabled>
+            <br><br>
+            <label>Telefone</label>
+            <input type="tel" placeholder="(00)00000-0000" id="recebetelefone"  oninput=mascara_telefone() maxlength="14" disabled>
+            <br><br>
+            <label for="">CPF</label>
+            <input type="text" id="recebecpf" oninput=mascara_cpf() placeholder="xxx.xxx.xxx-xx" maxlength="14" disabled>
+            <br><br>
+            <label for="">Senha</label>
+            <input type="text" placeholder="Senha" id="recebesenha" oninput="localSenha()"  disabled>
+
+            <br><br><br>
+            <input type="submit">
+            </form>
+        </div>  
+    </dialog>
+    </div>
+
+   <script src="script.js"></script> 
+</body>
+</html>
